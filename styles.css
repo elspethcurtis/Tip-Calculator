@@ -1,0 +1,244 @@
+html {
+    height: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background:hsl(185, 41%, 84%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height:100%;
+    font-family: 'Space Mono', monospace;
+}
+
+.modal{
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction:column;
+}
+
+@media screen and (min-width: 900px){
+    .modal{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.padding-small{
+    padding: 20px;
+}
+
+.col-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.col-2{
+    background:hsl(183, 100%, 15%);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+
+@media screen and (min-width: 900px){
+    .col-1,
+    .col-2{
+        width: 50%;
+    }
+}
+
+
+
+.tip-percentage{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tip-percentage p{
+    width:100%;
+}
+
+.tip-percentage button{
+    width: 30%;
+    margin: 5px;
+}
+
+.two-rows{
+    display: flex;
+    flex-direction: column;
+}
+
+#reset-btn{
+    background:hsl(172, 67%, 45%);
+    border: none;
+    padding: 15px 5px;
+    color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    width: 95%;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor:pointer;
+    transition: .5s;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+}
+
+#reset-btn:hover{
+    background:hsl(185, 41%, 84%);
+
+}
+
+.text-white{
+    color:white;
+}
+
+.text-light-blue{
+    color:hsl(185, 41%, 84%);
+}
+
+.flex{
+    display:flex;
+}
+
+.col-2-div{
+    justify-content:space-between;
+}
+
+.top-div{
+    width:100%;
+}
+
+.html-content{
+    background: none;
+    border: none;
+    color:hsl(172, 67%, 45%);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#bill-total{
+    background-image: url("images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    padding:15px;
+    background-position:2%;
+    text-align:right;
+    font-size: 16px;
+    border: none;
+    background-color:  hsl(189, 41%, 97%);
+    font-family: 'Space-mono', monospace;
+    border-radius: 4px;
+}
+
+#bill-total:focus{
+    outline:hsl(172, 67%, 45%) 2px solid;
+}
+
+.tip-percentage input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+
+  .tip-percentage label {
+    display: inline-block;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    width:120px;
+    height: 60px;
+    text-align: center;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tip-percentage input[type="radio"]:checked + label {
+    background-color:hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    
+}
+
+.tip-percentage input[type="radio"]:focus + label {
+    border: none;
+}
+
+
+.tip-percentage label:hover{
+    background-color:hsl(183, 100%, 15%);
+}
+
+#custom {
+    background-color:  hsl(189, 41%, 97%);
+    border: none;
+    border-radius: 4px;
+    width: 120px;
+    margin: 5px;
+    height: 60px;
+    text-align: center;
+    color: hsl(183, 100%, 15%);
+    font-family: 'Space-mono', monospace;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+::placeholder{
+    color: hsl(183, 100%, 15%);
+    font-family: 'Space-mono', monospace;
+}
+
+#custom-label{
+    text-align: center;
+    color: white;;
+    font-family: 'Space-mono', monospace;
+    font-size: 16px;
+    text-transform: capitalize;
+    position: absolute;
+    left: 15%;
+    top: 35%;
+    z-index: 10;
+    width: 70%;
+    background: none;
+    border: none;
+    margin: 5px;
+}
+
+#custom-label::placeholder{
+    color: white;
+}
+
+.custom-div{
+    position: relative;
+}
+
+#people-total{
+    background-image: url("images/icon-person.svg");
+    background-repeat: no-repeat;
+    padding: 15px;
+    background-position: 2%;
+    text-align:right;
+    font-size: 16px;
+    background-color:  hsl(189, 41%, 97%);
+    border: none;
+    font-family: 'Space-mono', monospace;
+    border-radius: 4px;
+
+}
+
+#people-total:focus{
+    outline:hsl(172, 67%, 45%) 2px solid;
+}

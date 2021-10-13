@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/983715f46c.js" crossorigin="anonymous"></script>
+
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="modal">
+    <div class="col-1 padding-small">
+      <div class="two-rows">
+        <label>Bill</label>
+        <input id="bill-total" type="number" placeholder="0.00">
+      </div>
+      <div class="tip-percentage">
+        <p>Select Tip %</p>
+        <div>
+          <input type="radio" id="5" name="percentage" value=".05" class="percentage-btn">
+          <label for="5">5%</label>
+        </div>
+        <div>
+          <input type="radio" id="10" name="percentage" value=".1" class="percentage-btn">
+          <label for="10">10%</label>
+        </div>
+        <div>
+          <input type="radio" id="15" name="percentage" value=".15" class="percentage-btn">
+          <label for="15">15%</label>
+        </div>
+        <div>
+          <input type="radio" id="25" name="percentage" value=".25" class="percentage-btn">
+          <label for="25">25%</label>
+        </div>
+        <div>
+          <input type="radio" id="50" name="percentage" value=".50" class="percentage-btn">
+          <label for="50">50%</label>
+        </div>
+        <div class="custom-div">
+          <input type="radio" id="custom" name="percentage" placeholder="custom" class="percentage-btn">
+          <label for="custom"></label>
+          <input type="number" id="custom-label" placeholder="custom"></label>
+        </div>
+      </div>
+
+      <div class="two-rows">
+        <label>Number of People</label>
+        <input id="people-total" type="number" placeholder="0">
+      </div>
+    </div>
+
+    <div class="col-2 padding-small">
+      <div class="top-div">
+        <div class="flex col-2-div">
+          <div>
+            <p class="text-white">Tip Amount</p>
+            <p class="text-light-blue"> / person</p>
+          </div>
+          <p id="tip-per-person" class="html-content"> $0.00 </p>
+        </div>
+        <div class="flex col-2-div">
+          <div>
+            <p class="text-white">Total</p>
+            <p class="text-light-blue">/ person</p>
+          </div>
+          <p id="total-per-person" class="html-content">$0.00</p>
+        </div>
+      </div>
+
+      <button id="reset-btn">Reset</button>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Elspeth Curtis</a>.
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
